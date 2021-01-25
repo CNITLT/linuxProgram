@@ -1,6 +1,7 @@
 #ifndef _CH_H_
 #define _CH_H_
 #include <stdio.h>
+#include <sys/times.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
