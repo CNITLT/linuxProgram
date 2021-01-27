@@ -18,7 +18,7 @@
 #include <netdb.h>
 #include <time.h>
 #include <sys/msg.h>
-
+#include <termios.h>
 #define err_exit(mesg){printf(mesg);exit(1);}
 
 #endif 
