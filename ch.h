@@ -20,6 +20,7 @@
 #include <sys/msg.h>
 #include <termios.h>
 #include <sys/mman.h>
+#include <sys/shm.h>
 #define err_exit(mesg){printf(mesg);exit(1);}
 
 #endif 
