@@ -1,14 +1,14 @@
 #include "showHostent.h"
 void showHostent(const struct hostent* hostPtr){
 	if(!hostPtr){
-		printf("Host is Null");
+		printf("Host is Null\n");
 		return;
 	}
 	printf("-------------------------------------------------\n");
 	printf("h_name:%s\n",hostPtr->h_name);
 	char **p = hostPtr->h_aliases;
 	if(!(*p)){
-		printf("no h_aliases");
+		printf("no h_aliases\n");
 	}
 	else{
 		int i = 0;
@@ -22,7 +22,7 @@ void showHostent(const struct hostent* hostPtr){
 	printf("h_length:%d\n",hostPtr->h_length);
 	p = hostPtr->h_addr_list;
 	if(!(*p)){
-		printf("no h_addr_list");
+		printf("no h_addr_list\n");
 	}
 	else{
 		char buf[INET6_ADDRSTRLEN];
