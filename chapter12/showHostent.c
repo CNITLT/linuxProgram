@@ -1,5 +1,8 @@
 #include "showHostent.h"
 void showHostent(const struct hostent* hostPtr){
+	if(!hostPtr){
+		printf("Host is Null");
+	}
 	printf("-------------------------------------------------\n");
 	printf("h_name:%s\n",hostPtr->h_name);
 	char **p = hostPtr->h_aliases;
