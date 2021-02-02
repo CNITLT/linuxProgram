@@ -2,6 +2,7 @@
 void showHostent(const struct hostent* hostPtr){
 	if(!hostPtr){
 		printf("Host is Null");
+		return;
 	}
 	printf("-------------------------------------------------\n");
 	printf("h_name:%s\n",hostPtr->h_name);
