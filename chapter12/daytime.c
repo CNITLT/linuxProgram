@@ -1,5 +1,5 @@
 #include "ch.h"
-#include "mysocket.h"
+#include "mysocket.c"
 #include "daytime.h"
 int main(int argc, char **argv, char **env){
 	int sockfd, n;
@@ -11,7 +11,7 @@ int main(int argc, char **argv, char **env){
 	else{
 		host = argv[1];
 	}
-	sockfd = socket_connect(host, dayTimeServPort);
+	sockfd = socket_connect(host, dayTimeServPort_str);
 	printf("test\n");
 	while((n = read(sockfd, recvbuf,sizeof(recvbuf))) > 0){
 			recvbuf[n] = 0;

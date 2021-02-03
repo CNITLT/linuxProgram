@@ -1,13 +1,13 @@
 #include "ch.h"
 #include "daytime.h"
-#include "mysocket.h"
+#include "mysocket.c"
 int main(int argc, char **argv, char **env){
 	int listenfd, connfd;
 	socklen_t len;
 	struct sockaddr_in servaddr, cliaddr;
 	char buf[1024];
 	time_t ticks;
-	listenfd = make_socket(SOCK_STREAM, dayTimeServPort);
+	listenfd = make_socket(SOCK_STREAM, dayTimeServPort_int);
 	listen(listenfd, 10);
 	while(1){
 			len = sizeof(cliaddr);
