@@ -12,7 +12,6 @@ int main(int argc, char **argv, char **env){
 		host = argv[1];
 	}
 	sockfd = socket_connect(host, dayTimeServPort_str);
-	printf("test\n");
 	while((n = read(sockfd, recvbuf,sizeof(recvbuf))) > 0){
 			recvbuf[n] = 0;
 			printf("%s\n", recvbuf);

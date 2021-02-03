@@ -21,6 +21,8 @@
 #include <termios.h>
 #include <sys/mman.h>
 #include <sys/shm.h>
+#include <sys/un.h>
+#include <netinet/in.h>
 #define err_exit(mesg){printf(mesg);exit(1);}
 
 #endif 
