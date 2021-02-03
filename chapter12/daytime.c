@@ -17,6 +17,7 @@ int main(int argc, char **argv, char **env){
 			printf("%s\n", recvbuf);
 	}
 	if(n < 0){
+		perror(NULL);
 		err_exit("read error\n");
 	}
 	return 0;

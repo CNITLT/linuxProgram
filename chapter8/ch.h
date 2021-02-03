@@ -22,6 +22,7 @@
 #include <sys/mman.h>
 #include <sys/shm.h>
 #include <sys/un.h>
+#include <signal.h>
 #include <netinet/in.h>
 #define err_exit(mesg){printf(mesg);exit(1);}
 
